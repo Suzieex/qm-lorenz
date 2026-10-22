@@ -1,0 +1,81 @@
+{
+  "seed": 20261022,
+  "trials": 300,
+  "initial_state": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "order": 3,
+  "h": 0.001,
+  "scale": 64.0,
+  "center": [
+    0.0,
+    0.0,
+    38.0
+  ],
+  "compressed_dimension": 20,
+  "padded_data_dimension": 32,
+  "explicit_hadamard_circuit_qubits": 19,
+  "dense_power_reference_qubits": 11,
+  "product_vs_dense_probability_error": 1.6653345369377348e-16,
+  "base_block_calls_per_interference_circuit": 9,
+  "qae_extra_phase_qubits": [
+    8,
+    10,
+    12,
+    14,
+    16
+  ],
+  "alpha": 215.52262062252305,
+  "alpha_h": 0.21552262062252306,
+  "K": 9,
+  "gamma_increment": 0.24051004371511234,
+  "gamma_full": 1.2405100437151126,
+  "B": 1.2181870595902282,
+  "readout_scale_increment": 18.751118269134718,
+  "readout_scale_full": 96.71509008290934,
+  "query_ratio_full_over_increment": 5.157830519479323,
+  "sampling_variance_ratio_full_over_increment": 26.603215667672345,
+  "hadamard_probabilities_increment": [
+    0.5000034539331699,
+    0.5006929988045375,
+    0.49995596476486914
+  ],
+  "circuit_state_normalization_error": 1.1102230246251565e-16,
+  "circuit_forward_inverse_error": 5.359206226765137e-15,
+  "ideal_circuit_next_state": [
+    1.0001295302187256,
+    1.025989005088505,
+    0.998348580196101
+  ],
+  "exact_carleman_next_state": [
+    1.000129530218704,
+    1.0259890050884828,
+    0.9983485801960938
+  ],
+  "ode_next_state": [
+    1.000129530203248,
+    1.0259889988935935,
+    0.9983485823009421
+  ],
+  "circuit_vs_carleman_error": 3.173995399766371e-14,
+  "carleman_vs_ode_error": 6.54272712894236e-09,
+  "taylor_operator_tail_bound": 6.077978228447028e-14,
+  "hoeffding_target_physical_error_per_coordinate": 0.001,
+  "hoeffding_shots_per_coordinate": 3366606672,
+  "hoeffding_total_failure_probability": 0.05,
+  "trajectory_end": 0.05,
+  "trajectory_shots_per_coordinate_per_step": 1000000,
+  "trajectory_shot_paths": 20,
+  "trajectory_ideal_final_error": 4.6696294710106865e-07,
+  "trajectory_shot_final_median_error": 0.19555500670684345,
+  "classical_target_rows_copy_seconds": 8.853001418174244e-06,
+  "limitations": [
+    "LCU uses products with fresh flags; the base UC and Householder lift are dense reference gates, not efficiently synthesized sparse circuits.",
+    "QAE is exact reduced-invariant-subspace QPE simulation; no quantum hardware was used.",
+    "Oracle call counts are not elementary gate counts or wall-time speedups.",
+    "Only quantum measurement sampling is noisy; gate noise and fault tolerance are excluded.",
+    "Trajectory demonstration is supplemental; no long-time or quantum-advantage claim."
+  ]
+}
