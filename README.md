@@ -43,33 +43,35 @@ python experiment.py --out results --seed 20261022 --trials 300
 
 采用标准参数：
 
-\[
+```math
 \dot x=10(y-x),\quad
 \dot y=28x-y-xz,\quad
 \dot z=xy-\frac83z.
-\]
+```
 
 默认初值为 `(1,1,1)`。参考解由 SciPy `DOP853` 计算，`rtol=2.3e-14, atol=2e-14`；它是高精度浮点参考，不是区间算术严格认证的精确解。接近双精度底噪的误差不用于宣称高阶收敛率。
 
 使用固定坐标变换：
 
-\[
+```math
 u=c+Sv,\qquad c=(0,0,38),\quad S=64.
-\]
+```
 
 Lorenz 的一个吸收球以 `c` 为中心、半径约 `43.88`；稍微扩大后仍小于 `64`，所以对该域内初值可取 `||v||<1`。域外初值需要另选尺度或先证明有限时间轨道界，不能自动沿用此保证。代码允许生成任意有限输入的提升态，但几何范数界只在满足条件时成立。
 
 缩放后的动力学为：
 
-\[
+```math
 \dot\xi=-10\xi+10\eta,
-\]
-\[
+```
+
+```math
 \dot\eta=-10\xi-\eta-64\xi\zeta,
-\]
-\[
+```
+
+```math
 \dot\zeta=64\xi\eta-\frac83\zeta-\frac{(8/3)38}{64}.
-\]
+```
 
 缩放能控制输入提升范数，但会改变二次项和常数项系数。它不保证 block encoding 的归一化因子很小；尺度不是越大越好。
 
@@ -77,22 +79,22 @@ Lorenz 的一个吸收球以 `c` 为中心、半径约 `43.88`；稍微扩大后
 
 保留所有总次数不超过 `N` 的不同单项式：
 
-\[
+```math
 \phi_N(v)=(1,\xi,\eta,\zeta,\xi^2,\xi\eta,\ldots)^T.
-\]
+```
 
 代码从链式法则自动构造：
 
-\[
+```math
 \frac{d}{dt}v^a=\sum_j a_jv^{a-e_j}f_j(v),
 \qquad \dot y=C_Ny.
-\]
+```
 
 超过总次数 `N` 的耦合直接截断。不同单项式数：
 
-\[
+```math
 D_N=\binom{N+3}{3}.
-\]
+```
 
 默认 `N=3` 时 `D_N=20`，补齐到 32 维数据寄存器。不要将冗余张量表示的 `3^N` 当作经典算法必须处理的独立维数。
 
@@ -102,23 +104,23 @@ D_N=\binom{N+3}{3}.
 
 精确矩阵传播的 relifted 一步定义为：
 
-\[
+```math
 v_+=P_1e^{hC_N}\phi_N(v).
-\]
+```
 
 ## 4. 振幅编码输入：尺度必须保留
 
 制备：
 
-\[
+```math
 |\phi\rangle=\frac{\phi_N(v)}B,\qquad B=\|\phi_N(v)\|_2.
-\]
+```
 
 对本代码使用的非冗余、未加权单项式：
 
-\[
+```math
 B^2\le\sum_{k=0}^N\|v\|^{2k}\le\frac1{1-r^2},\quad\|v\|\le r<1.
-\]
+```
 
 `B` 从已知的三个输入数计算。不能只准备 `v/||v||` 后忽略其范数。代码使用稠密 Householder 酉门精确制备有符号提升态；这一制备成本不被当成免费操作。
 
@@ -128,31 +130,31 @@ B^2\le\sum_{k=0}^N\|v\|^{2k}\le\frac1{1-r^2},\quad\|v\|\le r<1.
 
 不重新估计整个输出，改为：
 
-\[
+```math
 v_+=v+\Delta v,\qquad
 \Delta v=P_1(e^{hC_N}-I)\phi_N(v).
-\]
+```
 
 采用 Taylor 近似：
 
-\[
+```math
 E_K=\sum_{\ell=0}^K\frac{h^\ell C_N^\ell}{\ell!},\qquad D_K=E_K-I.
-\]
+```
 
 令
 
-\[
+```math
 \alpha=\sqrt{\|C_N\|_1\|C_N\|_\infty}\ge\|C_N\|_2,
 \qquad A=C_N/\alpha.
-\]
+```
 
 这里的范数由小规模经典矩阵显式计算；大规模算法需说明怎样获得系数界和 oracle。权重和为：
 
-\[
+```math
 w_\ell=\frac{(h\alpha)^\ell}{\ell!},\quad
 \Gamma_\Delta=\sum_{\ell=1}^Kw_\ell,\quad
 \Gamma_{\rm full}=1+\Gamma_\Delta.
-\]
+```
 
 `taylor_data` 自适应选择 `K`，使标量级数尾界不超过 `1e-13`。若下一项为 `w_(K+1)`，后续项比值不超过 `r_tail<1`，则尾和不超过 `w_(K+1)/(1-r_tail)`，它也控制算子 Taylor 误差。
 
@@ -160,32 +162,33 @@ w_\ell=\frac{(h\alpha)^\ell}{\ell!},\quad
 
 次数寄存器制备：
 
-\[
+```math
 \mathrm{PREP}|0\rangle
 =\sum_{\ell=1}^K\sqrt{w_\ell/\Gamma_\Delta}|\ell\rangle.
-\]
+```
 
 对每个 `ell`，取 `A^ell` 的 Julia 酉扩张：
 
-\[
+```math
 U_\ell=
 \begin{pmatrix}
 A^\ell & \sqrt{I-A^\ell(A^\ell)^\dagger}\\
 \sqrt{I-(A^\ell)^\dagger A^\ell} & -(A^\ell)^\dagger
 \end{pmatrix}.
-\]
+```
 
 这样可以正确处理非厄米 `C_N`，没有将 `exp(h*C_N)` 冒充普通哈密顿量演化。
 
 再定义：
 
-\[
+```math
 \mathrm{SELECT}=\sum_\ell|\ell\rangle\langle\ell|\otimes U_\ell,
-\]
-\[
+```
+
+```math
 U_\Delta=(\mathrm{PREP}^\dagger\otimes I)
 \mathrm{SELECT}(\mathrm{PREP}\otimes I).
-\]
+```
 
 辅助位全为零的 block 为 `D_K/Gamma_delta`。
 
@@ -222,16 +225,16 @@ data:  |phi> ──────┴──────────┴────�
 
 令 `e_j` 是三个一阶单项式的索引，构造基态置换 `R_j|0>=|0_anc,e_j>`。令：
 
-\[
+```math
 V_j=R_j^\dagger U_\Delta(I\otimes U_{\rm lift}).
-\]
+```
 
 则：
 
-\[
+```math
 a_j=\langle0|V_j|0\rangle
 =\frac{\Delta v_j}{B\Gamma_\Delta}.
-\]
+```
 
 ```text
 test: |0> ──H────●────H────measure Z
@@ -241,15 +244,15 @@ work: |0> ─────V_j─────────
 
 本系统与线路矩阵均为实数，故测试位测得 0 的概率：
 
-\[
+```math
 p_j=\frac{1+a_j}{2}.
-\]
+```
 
 恢复物理坐标：
 
-\[
+```math
 u_{+,j}=u_j+SB\Gamma_\Delta(2p_j-1).
-\]
+```
 
 **不做全态层析，不测高阶单项式，也不先后选择传播成功分支。** 三个干涉测试直接包含非酉传播的归一化代价。只测计算基的概率平方无法恢复符号，因此干涉参考是必要的。
 
@@ -259,24 +262,24 @@ u_{+,j}=u_j+SB\Gamma_\Delta(2p_j-1).
 
 定义物理读出因子：
 
-\[
+```math
 F_\Delta=SB\Gamma_\Delta.
-\]
+```
 
 ### 普通 shots
 
 每个坐标采样 `n` 次测试位，令 `p_hat=n0/n`：
 
-\[
+```math
 \hat u_{+,j}=u_j+F_\Delta(2\hat p_j-1).
-\]
+```
 
 其方差为：
 
-\[
+```math
 \mathrm{Var}(\hat u_{+,j})
 =\frac{F_\Delta^2(1-a_j^2)}n.
-\]
+```
 
 只有三个坐标消除了对全态维数的层析需求，但不能消除 `1/delta^2` 的采样精度依赖。
 
@@ -288,9 +291,9 @@ F_\Delta=SB\Gamma_\Delta.
 
 设相位位数 `q`，`M=2^q`，重复 `r=7` 次取中位数。每个坐标计入：
 
-\[
+```math
 Q=r[1+2(M-1)]
-\]
+```
 
 次 `A_j` 或 `A_j†` 调用：每轮初始制备一次，`M-1` 次 Grover 迭代每次包含两次制备／逆制备。普通 shots 使用相同 `Q` 次调用预算进行比较。
 
@@ -302,34 +305,35 @@ QAE 的分辨率具有网格效应，故有限样本误差不会严格随每个 
 
 设一次完整干涉制备／逆制备成本为 `C_delta`，要求物理坐标加性误差不超过 `delta`，则：
 
-\[
+```math
 G_{\rm shots}=\widetilde O\left(C_\Delta\max\{1,F_\Delta^2/\delta^2\}\right),
-\]
-\[
+```
+
+```math
 G_{\rm QAE}=\widetilde O\left(C_\Delta\max\{1,F_\Delta/\delta\}\right).
-\]
+```
 
 三个坐标只贡献常数因子。在 `h*alpha << 1`、`B=O(1)` 时，`Gamma_delta=O(h*alpha)`，增量读出相比完整坐标读出有利。
 
 若只看测量归一化系数，QAE 查询因子之比为：
 
-\[
+```math
 \frac{\Gamma_{\rm full}}{\Gamma_\Delta}
 =\frac{1+\Gamma_\Delta}{\Gamma_\Delta},
-\]
+```
 
 普通 shots 的方差系数之比约为它的平方；精确值还包含 `1-a_j^2`。这些是**两种量子读出方案之间**的改善，不是对经典数值积分的量子加速证明。
 
 误差预算至少应拆为：
 
-\[
+```math
 \epsilon_{\rm total}\le
 \epsilon_{\rm Carleman}+
 \epsilon_{\rm Taylor}+
 \epsilon_{\rm arithmetic/gates}+
 \epsilon_{\rm readout}+
 \epsilon_{\rm reference}.
-\]
+```
 
 当前实验使用双精度精确矩阵门，未加入硬件门噪声、纠错开销或有限门集合综合误差。
 
@@ -405,11 +409,11 @@ G_{\rm QAE}=\widetilde O\left(C_\Delta\max\{1,F_\Delta/\delta\}\right).
 
 进一步证明单步优势，需要构造可扩展的制备与 SELECT 编译，并比较：
 
-\[
+```math
 C_\Delta\max\{1,SB\Gamma_\Delta/\delta\}
 \quad\text{与}\quad
 C_{\rm classical}^{(3)}(N,h,\delta).
-\]
+```
 
 ## 12. 后续改进
 
