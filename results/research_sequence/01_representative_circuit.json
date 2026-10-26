@@ -1,0 +1,34 @@
+{
+  "alpha": 135.45833333333331,
+  "gamma": 0.14506148394242616,
+  "K": 7,
+  "predictor_order": 0,
+  "taylor_tail_bound": 2.8543782443158867e-12,
+  "base_calls_per_application": 7,
+  "data_qubits": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "width": 2,
+  "B": 1.0,
+  "F": 2.3209837430788185,
+  "qubits": 98,
+  "gates": {
+    "u": 6696608,
+    "cx": 5310859
+  },
+  "classification": "full generated Hadamard A, excludes QAE reflections/controls",
+  "primitive_basis": [
+    "u",
+    "cx"
+  ],
+  "coordinate": 1,
+  "N": 2,
+  "h": 0.001,
+  "epsilon": 1e-08,
+  "artifact": "rebuild from selected_resources(); no recursively expanded QPY stored"
+}

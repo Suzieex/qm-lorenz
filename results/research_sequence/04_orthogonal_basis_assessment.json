@@ -1,0 +1,9 @@
+{
+  "investigated": "tensor Chebyshev polynomials, total degree <= N",
+  "implementation_status": "exact separate residual bound + explicit coefficient-row Hadamard; no sparse arithmetic compiler",
+  "recurrence": "v*T_k(v)=(T_(k+1)(v)+T_(k-1)(v))/2 for k>=1",
+  "derivative": "T_k prime=k*U_(k-1); conversion to T basis has O(k) terms",
+  "sparse_risk": "basis conversion can increase row sparsity and preparation cost",
+  "certificate_risk": "retaining total degree after triangular basis change does not justify reusing the monomial truncation certificate",
+  "conclusion": "weighted, anisotropic and orthogonal residuals evaluated; coefficient preparation and classical preprocessing are charged"
+}

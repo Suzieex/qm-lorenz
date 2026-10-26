@@ -1,0 +1,9 @@
+{
+  "candidates": 60,
+  "certified_classical_stop": 0,
+  "all_tasks_have_certified_classical_alternative": true,
+  "max_classical_order": 8,
+  "joint_candidates": 2787,
+  "joint_nonstop_selected": 21,
+  "warning": "row norm has an implemented preparation backend, but its classical precompute is charged; counts are not a speed ratio"
+}

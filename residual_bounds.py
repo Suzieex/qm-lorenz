@@ -63,7 +63,7 @@ def local_enclosure(model,u0,h,refinements=8,bits=80):
     refinement is an integral-equation image of an already valid enclosure.
     Outward dyadic rounding prevents uncontrolled denominator growth.
     """
-    h=F(h);u=[F(float(x)) for x in u0]
+    h=F(h);u=[x if isinstance(x,F) else F(float(x)) for x in u0]
     if h<=0:raise ValueError('h must be positive')
     parameters=tuple(F(float(x)) for x in [model.sigma,model.rho,model.beta])
     f0=rhs_box([point(x) for x in u],parameters)
@@ -76,6 +76,8 @@ def local_enclosure(model,u0,h,refinements=8,bits=80):
         # preserve a bad aspect ratio forever (e.g. x'=0 initially, y' large).
         radii=[max(r,2*max(abs(a-x),abs(b-x)))
                for r,x,(a,b) in zip(radii,u,image)]
+        if any(r.numerator.bit_length()>4096 for r in radii):
+            raise ValueError('Local tube inflation diverged; reduce h')
     else:raise ValueError('Failed to validate a local tube; reduce h')
     initial_box=[[str(x) for x in interval] for interval in box]
     initial_image=[[str(x) for x in interval] for interval in image]

@@ -1,0 +1,17 @@
+N,h,steps,uniform_continuous_query_objective,optimized_continuous_query_objective,improvement_factor,classification
+3,0.001,5000,9.399467211483525e+50,3.580782311973275e+49,26.249758830783897,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+3,0.005,1000,3.6035566579654637e+49,1.3730987854726615e+48,26.243972364486595,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+3,0.01,500,8.536358893269089e+48,3.2549334218170216e+47,26.225909372068767,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+3,0.02,250,1.910830178775724e+48,7.306085042685893e+46,26.153954787162686,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+5,0.001,5000,9.399467211483525e+50,3.580782311973275e+49,26.249758830783897,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+5,0.005,1000,3.6035566579654637e+49,1.3730987854726615e+48,26.243972364486595,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+5,0.01,500,8.536358893269089e+48,3.2549334218170216e+47,26.225909372068767,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+5,0.02,250,1.910830178775724e+48,7.306085042685893e+46,26.153954787162686,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+7,0.001,5000,9.399467211483525e+50,3.580782311973275e+49,26.249758830783897,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+7,0.005,1000,3.6035566579654637e+49,1.3730987854726615e+48,26.243972364486595,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+7,0.01,500,8.536358893269089e+48,3.2549334218170216e+47,26.225909372068767,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+7,0.02,250,1.910830178775724e+48,7.306085042685893e+46,26.153954787162686,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+9,0.001,5000,9.399467211483525e+50,3.580782311973275e+49,26.249758830783897,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+9,0.005,1000,3.6035566579654637e+49,1.3730987854726615e+48,26.243972364486595,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+9,0.01,500,8.536358893269089e+48,3.2549334218170216e+47,26.225909372068767,numerical continuous allocation model; excludes QAE rounding/repeats and variable F
+9,0.02,250,1.910830178775724e+48,7.306085042685893e+46,26.153954787162686,numerical continuous allocation model; excludes QAE rounding/repeats and variable F

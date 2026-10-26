@@ -1,0 +1,7 @@
+initial,H,epsilon,N,p,center,S,segments,first_segment_truncation_upper,base_calls_first_segment,stationary_T5_base_calls,classification
+standard,0.001,0.0001,2,1,rho,16.0,5000,0.0000137724242872182931680034,135265788,676328940000,optimistic stationary first-segment resource proxy; no T5 accuracy or changing-input resource guarantee
+standard,0.001,1e-06,3,2,initial,16.0,5000,1.70637131368103789510094E-22,3246390522,16231952610000,optimistic stationary first-segment resource proxy; no T5 accuracy or changing-input resource guarantee
+standard,0.001,1e-08,3,2,initial,16.0,5000,1.70637131368103789510094E-22,554050780152,2770253900760000,optimistic stationary first-segment resource proxy; no T5 accuracy or changing-input resource guarantee
+attractor,0.001,0.0001,3,1,rho,16.0,5000,7.03046622879013711103547E-7,270532092,1352660460000,optimistic stationary first-segment resource proxy; no T5 accuracy or changing-input resource guarantee
+attractor,0.001,1e-06,4,2,rho,16.0,5000,1.42982780895786106838526E-9,3246390522,16231952610000,optimistic stationary first-segment resource proxy; no T5 accuracy or changing-input resource guarantee
+attractor,0.001,1e-08,4,3,rho,16.0,5000,1.42982780895786106838526E-9,30299651193,151498255965000,optimistic stationary first-segment resource proxy; no T5 accuracy or changing-input resource guarantee

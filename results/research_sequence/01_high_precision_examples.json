@@ -1,0 +1,98 @@
+[
+  {
+    "case": "original",
+    "N": 3,
+    "h": 0.001,
+    "pivot": [
+      0.0,
+      0.0,
+      38.0
+    ],
+    "certified_truncation": "6.86162025730136209614815E-9",
+    "observed_ideal_error": "0.000000006542730612128457463046186723830720008503",
+    "ratio": "1.04873953462",
+    "reference_refinement_indicator": "0.0",
+    "matrix_series_degree": 52,
+    "classification": "high precision numerical observation; certificate computed separately"
+  },
+  {
+    "case": "selected_increment_standard",
+    "N": 2,
+    "h": 0.001,
+    "pivot": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "certified_truncation": "1.18362291973730967305232E-15",
+    "observed_ideal_error": "1.45800767951158570137135348333336211785e-17",
+    "ratio": "81.1808426231",
+    "reference_refinement_indicator": "0.0",
+    "matrix_series_degree": 45,
+    "classification": "high precision numerical observation; certificate computed separately"
+  },
+  {
+    "case": "selected_increment_attractor",
+    "N": 4,
+    "h": 0.001,
+    "pivot": [
+      0.0,
+      0.0,
+      28.0
+    ],
+    "certified_truncation": "1.42982780895786106838526E-9",
+    "observed_ideal_error": "0.000000001306631908142982946597059329125139761781",
+    "ratio": "1.09428508522",
+    "reference_refinement_indicator": "0.0",
+    "matrix_series_degree": 47,
+    "classification": "high precision numerical observation; certificate computed separately"
+  },
+  {
+    "case": "selected_remainder_standard",
+    "N": 3,
+    "h": 0.001,
+    "pivot": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "certified_truncation": "1.70637131368103789510094E-22",
+    "observed_ideal_error": "1.989085986949573559497996944751076603731e-25",
+    "ratio": "857.867042891",
+    "reference_refinement_indicator": "0.0",
+    "matrix_series_degree": 48,
+    "classification": "high precision numerical observation; certificate computed separately"
+  },
+  {
+    "case": "selected_remainder_attractor",
+    "N": 4,
+    "h": 0.001,
+    "pivot": [
+      0.0,
+      0.0,
+      28.0
+    ],
+    "certified_truncation": "1.42982780895786106838526E-9",
+    "observed_ideal_error": "0.000000001306631908142982946597059329125139761781",
+    "ratio": "1.09428508522",
+    "reference_refinement_indicator": "0.0",
+    "matrix_series_degree": 47,
+    "classification": "high precision numerical observation; certificate computed separately"
+  },
+  {
+    "case": "Chebyshev",
+    "N": 2,
+    "h": 0.005,
+    "pivot": [
+      0.0,
+      0.0,
+      38.0
+    ],
+    "certified_truncation": "0.973672622004087324560069",
+    "observed_ideal_error": "0.921224019182364629506553284371003705381",
+    "ratio": "1.05693360326",
+    "reference_refinement_indicator": "0.0",
+    "matrix_series_degree": 62,
+    "classification": "high precision numerical observation; certificate computed separately"
+  }
+]

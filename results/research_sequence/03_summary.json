@@ -1,0 +1,6 @@
+{
+  "condition": "each row certifies only a segment from its stated initial point",
+  "T5_counts": "optimistic screening: final tolerance reused locally; not a T5 accuracy guarantee",
+  "invalid": 25,
+  "warning": "continuous truncated propagation is not equivalent to relifting at internal steps"
+}

@@ -1,0 +1,11 @@
+{
+  "T": 5,
+  "domain_radius": 44,
+  "one_sided_Lipschitz": 21,
+  "exp_LT_upper": "3.98951957054721585076376E+45",
+  "certified_full_trajectory_candidates": 0,
+  "certificate": "uniform truncation, exact exponential upper bound, Taylor budget, conditional readout union bound",
+  "projection": "project readout to the radius44 ball centered at (0,0,38); nonexpansive relative to true state",
+  "missing": "actual finite-gate and finite-arithmetic error budget; current full-trajectory candidates fail truncation budget",
+  "conclusion": "no certified end-to-end speedup established; failure of this conservative certificate is not failure of numerical trajectories"
+}

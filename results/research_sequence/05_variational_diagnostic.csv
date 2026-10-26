@@ -1,0 +1,9 @@
+initial,h,T,steps,terminal_initial_amplification,terminal_weight_sum,maximum_terminal_weight,allocation_improvement,variational_refinement_indicator,classification
+standard,0.001,5,5000,1.7428865826886633,8523.101101896724,2.6000285874359146,1.0120618442605032,4.750051007775521e-10,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+standard,0.005,5,1000,1.7428865826886633,1704.327592558534,2.5998771711231305,1.012085383373723,4.579790718029555e-10,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+standard,0.01,5,500,1.7428865826886633,851.9850676893843,2.5996917407952083,1.0121152175290276,4.2704996137032495e-10,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+standard,0.02,5,250,1.7428865826886633,425.81999613636185,2.598196691692336,1.0121769994209695,3.9787102611793647e-10,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+attractor,0.001,5,5000,126.15361775858628,166558.7644275089,125.89210322014142,1.347828243067685,1.2007775015170796e-07,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+attractor,0.005,5,1000,126.15361775858628,33261.795456821616,124.79831291316953,1.3480229112098099,1.1826035751701947e-07,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+attractor,0.01,5,500,126.15361775858628,16599.772013415568,123.33392470844294,1.3482675969460451,1.1702445306032204e-07,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee
+attractor,0.02,5,250,126.15361775858628,8268.92398866698,121.87192016803476,1.3487617320891894,1.137836092630522e-07,numerical linearized terminal sensitivity only; no nonlinear or all-times guarantee

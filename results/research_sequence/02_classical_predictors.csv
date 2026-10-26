@@ -1,0 +1,22 @@
+initial,h,epsilon,certified_order,certified_remainder,convolution_products,online_certificate_terms,certificate_precompute_products,certificate_coefficient_max_bits,guarantee
+standard,0.001,0.0001,2,0.00000126240518334049352305430,6,39,161,161,exact Taylor predictor; coefficient rounding excluded
+standard,0.001,1e-06,3,5.45598651524571758072169E-9,12,62,369,219,exact Taylor predictor; coefficient rounding excluded
+standard,0.001,1e-08,3,5.45598651524571758072169E-9,12,62,369,219,exact Taylor predictor; coefficient rounding excluded
+standard,0.005,0.0001,3,0.00000345526997114077414002040,12,62,369,219,exact Taylor predictor; coefficient rounding excluded
+standard,0.005,1e-06,4,8.53889980584733061200717E-8,20,89,731,274,exact Taylor predictor; coefficient rounding excluded
+standard,0.005,1e-08,5,1.65467740379332230662703E-9,30,125,1300,332,exact Taylor predictor; coefficient rounding excluded
+standard,0.01,0.0001,3,0.0000575922860382680367065382,12,62,369,219,exact Taylor predictor; coefficient rounding excluded
+standard,0.01,1e-06,5,1.11584761538309412857534E-7,30,125,1300,332,exact Taylor predictor; coefficient rounding excluded
+standard,0.01,1e-08,6,3.99024204003192345857489E-9,42,166,2147,388,exact Taylor predictor; coefficient rounding excluded
+standard,0.02,0.0001,5,0.00000907173012747687866551857,30,125,1300,332,exact Taylor predictor; coefficient rounding excluded
+standard,0.02,1e-06,6,7.16781188676444604947184E-7,42,166,2147,388,exact Taylor predictor; coefficient rounding excluded
+standard,0.02,1e-08,8,6.57580580745586176950242E-9,72,277,4975,501,exact Taylor predictor; coefficient rounding excluded
+attractor,0.001,0.0001,2,0.0000100199669174876596908934,6,39,179,168,exact Taylor predictor; coefficient rounding excluded
+attractor,0.001,1e-06,3,8.13850794291326709901186E-8,12,62,411,224,exact Taylor predictor; coefficient rounding excluded
+attractor,0.001,1e-08,4,6.32407999306253805881216E-10,20,89,814,281,exact Taylor predictor; coefficient rounding excluded
+attractor,0.005,0.0001,3,0.0000526895024335084111018108,12,62,411,224,exact Taylor predictor; coefficient rounding excluded
+attractor,0.005,1e-06,5,7.56234035793889142907150E-8,30,125,1445,338,exact Taylor predictor; coefficient rounding excluded
+attractor,0.005,1e-08,6,2.69984972965718888255984E-9,42,166,2383,394,exact Taylor predictor; coefficient rounding excluded
+attractor,0.01,0.0001,4,0.0000768507177057057139710522,20,89,814,281,exact Taylor predictor; coefficient rounding excluded
+attractor,0.01,1e-06,6,4.33735608057213060266187E-7,42,166,2383,394,exact Taylor predictor; coefficient rounding excluded
+attractor,0.01,1e-08,8,2.28662447514455252665447E-9,72,277,5505,508,exact Taylor predictor; coefficient rounding excluded

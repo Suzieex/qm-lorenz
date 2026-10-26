@@ -1,0 +1,14 @@
+{
+  "configurations": 1134,
+  "selected": 21,
+  "feasible": 618,
+  "tube_failures": [
+    {
+      "initial": "attractor",
+      "h": 0.02,
+      "error": "Failed to validate a local tube; reduce h"
+    }
+  ],
+  "status": "single-step truncation/Taylor certificates; QAE counts assume exact logical gates",
+  "objectives": "same h,initial,epsilon comparison; no reference trajectory selects feasibility"
+}
