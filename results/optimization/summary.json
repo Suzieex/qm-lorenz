@@ -1,0 +1,82 @@
+{
+  "block_verification": [
+    {
+      "N": 1,
+      "maximum_valid_block_error": 1.1102230246251565e-16,
+      "invalid_column_error": 0.0
+    },
+    {
+      "N": 2,
+      "maximum_valid_block_error": 5.551115123125783e-17,
+      "invalid_column_error": 0.0
+    },
+    {
+      "N": 3,
+      "maximum_valid_block_error": 1.1102230246251565e-16,
+      "invalid_column_error": 0.0
+    }
+  ],
+  "sparse_hadamard_metadata": {
+    "alpha": 31.583333333333332,
+    "gamma": 0.032082086805555556,
+    "K": 2,
+    "predictor_order": 0,
+    "taylor_tail_bound": 5.29255485247327e-06,
+    "base_calls_per_application": 2,
+    "data_qubits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "width": 2,
+    "B": 1.1552994403508556,
+    "F": 2.372122683631738
+  },
+  "sparse_hadamard_qubits": 56,
+  "row_residual_metadata": {
+    "B": 1.2181870595902282,
+    "row_norm": 0.002098685867116021,
+    "F": 0.16362188578980055,
+    "classical_residual": -1.0994911517143915e-05,
+    "expected_test_probability": 0.49996640146437604,
+    "classical_precompute_terms": 684,
+    "row_support": 10,
+    "lift_support": 20,
+    "K": 12,
+    "predictor_order": 1
+  },
+  "row_residual_qubits": 22,
+  "row_residual_gates": {
+    "u": 60619,
+    "cx": 48044
+  },
+  "classical_predictor_smallest_orders": {
+    "standard,h=0.001": 3,
+    "standard,h=0.002": 4,
+    "standard,h=0.005": 5,
+    "standard,h=0.01": 6,
+    "attractor,h=0.001": 4,
+    "attractor,h=0.002": 5,
+    "attractor,h=0.005": 6,
+    "attractor,h=0.01": 8
+  },
+  "joint_search_configurations": 1792,
+  "deterministic_feasible": 1080,
+  "classical_predictor_pass": 32,
+  "caution": [
+    "No single-step quantum advantage demonstrated.",
+    "Rows are classically precomputed and state preparation is not free.",
+    "Joint search is single-step, not a T=5 trajectory certificate.",
+    "Reference-based predictor acceptance is an empirical benchmark, not a runtime oracle.",
+    "Conditional priority 5 is not promoted before a single-step advantage is established."
+  ],
+  "qiskit_version": "2.6.1",
+  "transpile_basis": [
+    "u",
+    "cx"
+  ],
+  "transpile_optimization_level": 1
+}

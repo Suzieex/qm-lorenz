@@ -19,6 +19,7 @@ def create_report(root=Path('.')):
     summary=json.loads((data/'summary.json').read_text())
     def value(x):return '未越界' if x in ['',None] else f'{float(x):.6g}'
     text=['# 长时间同初值轨道高精度验证','',
+        '本报告保留为历史压力测试。当前优化目标已改为 T=5 的短时轨道、较长时间只看统计量，见 [短时成本比较](SHORT_TIME_COMPARISON.md)。','',
         '本报告由 `write_longtime_report.py` 从原始数据生成。目标是同一个初值的逐时刻轨道误差，不用统计量或 shadowing 替代。所有时间均为 Lorenz 无量纲时间。',
         '',f"测试到 T={summary['horizon']:g}，参考采样间隔 0.001。两组初值为 `(1,1,1)`（standard）和 `(-8,8,27)`（attractor）。后者直接接近吸引子，避免只依赖标准初值的初始过渡段。",'',
         '**结论范围：数值交叉验证，不是区间算术认证或量子硬件实验。有限路径的比例不是严格成功概率保证。**','',

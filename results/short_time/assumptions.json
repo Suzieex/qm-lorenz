@@ -1,0 +1,21 @@
+{
+  "T": 5.0,
+  "epsilons": [
+    0.001,
+    1e-06,
+    1e-08
+  ],
+  "model": "same binary64 parameters as long-time MP reference",
+  "quantum_hardware_noise": false,
+  "fault_tolerance_included": false,
+  "quantum_budget": "canonical QAE: each local coordinate tolerance equals final epsilon; accumulation ignored",
+  "success_probability": "union bound for local estimators conditional on all inputs in radius-44 domain",
+  "warning": "No full-trajectory quantum accuracy certificate. Oracle calls and classical RHS counts are distinct units.",
+  "classical_output": "dense classical trajectory checked on grid .001",
+  "quantum_output": "discrete states at relifting times; no interpolation certificate",
+  "work_not_counted": [
+    "quantum elementary gate synthesis and state-preparation cost",
+    "classical preprocessing and dense-output evaluation cost"
+  ],
+  "selection": "small finite parameter grid; not a proof of globally optimal implementations"
+}
