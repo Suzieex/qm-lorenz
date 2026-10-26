@@ -24,6 +24,12 @@ Windows 可省略 `OPENBLAS_NUM_THREADS=1` 前缀。依赖仅为 NumPy、SciPy�
 python experiment.py --out results --seed 20261022 --trials 300
 ```
 
+关于三种归一化、不同 S 的比较、增量法适用条件、误差界和含全部重复次数的成本，见 [完整理论推导](THEORY.md)。尺度实验可单独运行：
+
+```bash
+OPENBLAS_NUM_THREADS=1 python scale_study.py --order 3 --h 0.001
+```
+
 文件：
 
 | 文件 | 功能 |
@@ -31,6 +37,10 @@ python experiment.py --out results --seed 20261022 --trials 300
 | `carleman.py` | Lorenz 模型、单项式生成元、酉扩张、LCU 状态向量、Hadamard 读出、QAE |
 | `experiment.py` | 单步精度、测量预算对照、补充多步实验、作图与数据导出 |
 | `test_validation.py` | 链式法则、非厄米 block encoding、Taylor 误差界、带符号读出、QAE 检验 |
+| `THEORY.md` | 归一化、尺度、截断与读出误差、单步／多步／多次运行的完整成本推导 |
+| `scale_study.py` | 固定物理问题扫描 S，验证相似变换并比较查询成本前因子 |
+| `results/scale_study.csv` | 尺度扫描原始数据，包含域范数界与保守截断界 |
+| `results/scale_study.png` | B、alpha、Gamma 与物理读出因子的尺度对照 |
 | `results/summary.json` | 默认实验的完整参数与关键结果 |
 | `results/convergence.csv` | 阶数与步长扫描 |
 | `results/readout.csv` | 查询预算相同的有限读出实验 |

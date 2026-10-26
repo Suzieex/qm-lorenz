@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 from scipy.linalg import expm
 from carleman import (Lorenz, Carleman, DenseLCUCircuit, ProductLCUCircuit, unitary_dilation,
-                      taylor_data, qae_distribution)
+                      taylor_data, qae_distribution, reference)
 
 
 class Validation(unittest.TestCase):
@@ -70,6 +70,37 @@ class Validation(unittest.TestCase):
             state, _ = product.output(u)
             np.testing.assert_allclose(product.apply(product.apply(state), True), state,
                                        atol=2e-13)
+
+    def test_scale_similarity_and_physical_invariance(self):
+        u = np.array([-8., 8., 27.])
+        ref = Carleman(Lorenz(scale=64.), 3)
+        degrees = np.array([sum(a) for a in ref.exponents])
+        for S in [16., 32., 48., 128.]:
+            other = Carleman(Lorenz(scale=S), 3)
+            diagonal = (64./S)**degrees
+            np.testing.assert_allclose(other.C,
+                diagonal[:, None]*ref.C/diagonal[None, :], atol=1e-12)
+            np.testing.assert_allclose(other.exact_map(u, .001),
+                                       ref.exact_map(u, .001), atol=2e-12)
+            phi = other.lift(other.model.normalize(u))
+            r = 44./S
+            self.assertLessEqual(np.linalg.norm(phi),
+                                 np.sqrt(sum(r**(2*k) for k in range(4))))
+
+    def test_quadratic_residual_bound_sanity(self):
+        from math import factorial
+        model, h = Lorenz(), .001
+        for N in [2, 3]:
+            c, extended = Carleman(model, N), Carleman(model, N+1)
+            top = [i for i,a in enumerate(c.exponents) if sum(a)==N]
+            omitted = [i for i,a in enumerate(extended.exponents) if sum(a)==N+1]
+            beta = np.linalg.norm(extended.C[np.ix_(top, omitted)], 2)
+            _, _, alpha, _ = taylor_data(c.C, h)
+            r = 44/model.scale
+            bound = model.scale*beta*r**(N+1)*np.exp(alpha*h)*alpha**(N-1)*h**N/factorial(N)
+            for u in [np.ones(3), np.array([-8.,8.,27.]), np.array([20.,0.,38.])]:
+                actual = np.linalg.norm(c.exact_map(u,h)-reference(model,u,[h])[0])
+                self.assertLessEqual(actual, bound)
 
 
 if __name__ == '__main__':
