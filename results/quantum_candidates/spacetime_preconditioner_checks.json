@@ -1,0 +1,66 @@
+[
+  {
+    "initial": "standard",
+    "M": 16,
+    "numerical_exact_preconditioning_solution_difference": 5.0858684286311364e-15,
+    "numerical_exact_preconditioning_relative_difference": 6.2780729355100415e-16,
+    "prefix_preconditioner_norm_majorant": 16.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "standard",
+    "M": 32,
+    "numerical_exact_preconditioning_solution_difference": 3.9368642741477374e-14,
+    "numerical_exact_preconditioning_relative_difference": 3.339195368477334e-15,
+    "prefix_preconditioner_norm_majorant": 32.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "standard",
+    "M": 64,
+    "numerical_exact_preconditioning_solution_difference": 3.526411403573283e-13,
+    "numerical_exact_preconditioning_relative_difference": 5.789042561993763e-15,
+    "prefix_preconditioner_norm_majorant": 64.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "standard",
+    "M": 128,
+    "numerical_exact_preconditioning_solution_difference": 2.1220832403943145e-14,
+    "numerical_exact_preconditioning_relative_difference": 1.676731053964181e-15,
+    "prefix_preconditioner_norm_majorant": 128.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "attractor",
+    "M": 16,
+    "numerical_exact_preconditioning_solution_difference": 3.0243899728531e-06,
+    "numerical_exact_preconditioning_relative_difference": 5.7486263581808944e-12,
+    "prefix_preconditioner_norm_majorant": 16.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "attractor",
+    "M": 32,
+    "numerical_exact_preconditioning_solution_difference": 5.13781976561961e-12,
+    "numerical_exact_preconditioning_relative_difference": 1.903691622656556e-15,
+    "prefix_preconditioner_norm_majorant": 32.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "attractor",
+    "M": 64,
+    "numerical_exact_preconditioning_solution_difference": 1.324314677708339e-12,
+    "numerical_exact_preconditioning_relative_difference": 1.5815335727198734e-14,
+    "prefix_preconditioner_norm_majorant": 64.0,
+    "prefix_norm_not_free": true
+  },
+  {
+    "initial": "attractor",
+    "M": 128,
+    "numerical_exact_preconditioning_solution_difference": 1.080222102282836e-13,
+    "numerical_exact_preconditioning_relative_difference": 1.030509589356419e-14,
+    "prefix_preconditioner_norm_majorant": 128.0,
+    "prefix_norm_not_free": true
+  }
+]

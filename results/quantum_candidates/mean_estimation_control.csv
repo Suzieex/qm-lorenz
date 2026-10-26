@@ -1,0 +1,6 @@
+phase_bits,QAE_A_calls,median_repeats,QAE_normalized_RMSE_exact_law,MC_normalized_RMSE_same_function_calls,continuous_integral_QAE_RMSE_including_midpoint_bias,classical_exact_finite_sum_function_calls,classical_exact_continuous_coefficient_terms,scope
+4,279,9,0.05988471407374414,0.01593503632662051,6.638792000628842e-07,32,9,conditional query comparison; QAE distribution simulated classically; no end-to-end quantum speedup
+6,1143,9,0.018746055525277625,0.007872851220227899,2.080435048712936e-07,32,9,conditional query comparison; QAE distribution simulated classically; no end-to-end quantum speedup
+8,4599,9,0.0023568715077927297,0.0039248535352662435,2.4309343910342545e-08,32,9,conditional query comparison; QAE distribution simulated classically; no end-to-end quantum speedup
+10,18423,9,0.0001223185119976997,0.001960988213914347,3.1545568334903284e-09,32,9,conditional query comparison; QAE distribution simulated classically; no end-to-end quantum speedup
+12,73719,9,0.00012265656941179586,0.0009803145347618474,3.1550124334573314e-09,32,9,conditional query comparison; QAE distribution simulated classically; no end-to-end quantum speedup

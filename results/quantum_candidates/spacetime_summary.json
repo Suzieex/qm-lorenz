@@ -1,0 +1,29 @@
+{
+  "cases": 35,
+  "T": 5,
+  "Ms_low_order": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "Ms_order4": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "Ms_aligned_order16": [
+    128,
+    256
+  ],
+  "empirical_target_passes": 3,
+  "empirical_combined_target_screen_passes": 3,
+  "norm_warning": "sqrt(norm1 norminf) and SVD are numerical diagnostics, no corresponding cheap block encoding is supplied",
+  "conditioning_warning": "Conditioning alone is insufficient to claim QLSA advantage; prefix L has a growing norm and changing RHS preparation cost",
+  "endpoint_probability_warning": "Unpadded history only; endpoint padding can change probability and other resource costs",
+  "transition_preprocessing_scope": "E,d compilation is charged for this formulation; a full-stage QLSA could avoid it using more unknowns and would require a separate audit",
+  "classical_warning": "Both differential and integral forms have O(M) structured forward solutions",
+  "precision_warning": "Only the three aligned high-order cases meet the empirical target; none is interval-certified here",
+  "final_output": "Three physical endpoint corrections; a full classical history would also incur its output-size cost"
+}

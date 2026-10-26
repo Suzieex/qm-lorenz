@@ -1,0 +1,8 @@
+{
+  "cases": 35,
+  "max_dense_vs_structured_relative_difference": 8.187797456380197e-12,
+  "max_structured_relative_linear_system_residual": 2.974975024138818e-17,
+  "max_direct_stage_transition_relative_difference": 5.513067570454114e-15,
+  "max_exact_prefix_relative_difference": 5.7486263581808944e-12,
+  "classification": "numerical consistency, not interval accuracy certification"
+}

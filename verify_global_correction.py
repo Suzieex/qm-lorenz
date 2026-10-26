@@ -8,7 +8,9 @@ from global_correction_study import digest,encode_bounds,guide_endpoint_error_lo
 
 def verify_one(c):
     assert list(map(str,PARAMETERS))==c['exact_parameters']
-    assert Q(c['times'][0])==0 and Q(c['times'][-1])==Q(c['T'])
+    # A certified interval may extend beyond the requested output time (e.g.
+    # binary64 .1 lies slightly above exact 1/10). Coverage is sufficient.
+    assert Q(c['times'][0])==0 and 0<=Q(c['T'])<=Q(c['times'][-1])
     if 'initial' in c:assert list(map(Q,c['nodes'][0]))==list(map(Q,INITIAL[c['initial']]))
     result=validate(list(map(Q,c['times'])),[list(map(Q,row)) for row in c['nodes']],
         max_step=Q(c['max_step']),bits=c['bits'],degree=c['degree'],vector_degree=c.get('vector_degree'))

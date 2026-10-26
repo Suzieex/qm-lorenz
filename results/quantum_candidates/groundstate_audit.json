@@ -1,0 +1,185 @@
+{
+  "method": "implicit-Euler polynomial lifting followed by unconstrained H=L_dagger L ground-state preparation",
+  "result": "generic ground state is insufficient: symmetry, PSD and Y00=1 do not enforce identical tensor-product rank1",
+  "mathematical_status": "exact rational counterexample with the repository binary64 beta interpreted exactly",
+  "caveat": "Not a refutation of a method that separately enforces rank-one/product consistency or proves its prepared ground state has that property.",
+  "paper": "https://arxiv.org/html/2504.13174",
+  "comparison_scope": "A Lorenz-specific feasibility test inspired by generic nonlinear lifting, not a reproduction of that paper entire Chebyshev construction.",
+  "h": "1/100",
+  "sigma": "10",
+  "rho": "28",
+  "beta": "6004799503160661/2251799813685248",
+  "initial_state": [
+    "1",
+    "1",
+    "1"
+  ],
+  "spurious_mean": [
+    "1",
+    "1",
+    "1"
+  ],
+  "covariance": [
+    [
+      "30",
+      "3752999689475413/2251799813685248",
+      "26"
+    ],
+    [
+      "3752999689475413/2251799813685248",
+      "30",
+      "0"
+    ],
+    [
+      "26",
+      "0",
+      "30"
+    ]
+  ],
+  "moment_matrix": [
+    [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "31",
+      "6004799503160661/2251799813685248",
+      "27"
+    ],
+    [
+      "1",
+      "6004799503160661/2251799813685248",
+      "31",
+      "1"
+    ],
+    [
+      "1",
+      "27",
+      "1",
+      "31"
+    ]
+  ],
+  "exact_lifted_residual": [
+    "0",
+    "0",
+    "0"
+  ],
+  "exact_original_residual_at_mean": [
+    "0",
+    "-13/50",
+    "3752999689475413/225179981368524800"
+  ],
+  "leading_principal_minors_of_Y": [
+    "1",
+    "30",
+    "4549457154152423298984612407833031/5070602400912917605986812821504",
+    "16825948967029364960062904107444905/2535301200456458802993406410752"
+  ],
+  "covariance_diagonal_dominance_margin": "5254199565265579/2251799813685248",
+  "exact_nonzero_constraint_rank_minor": "250373117684035354263/225179981368524800000",
+  "symmetry": true,
+  "PSD": true,
+  "positive_definite": true,
+  "Y00": "1",
+  "exact_matrix_rank": 4,
+  "exact_Schmidt_rank_of_normalized_vectorization": 4,
+  "symmetric_basis_dimension": 10,
+  "exact_constraint_rank": 3,
+  "exact_zero_energy_subspace_dimension": 7,
+  "rank_one_condition_satisfied": false,
+  "bounded_support_construction": "mu+sqrt(30)*(sx,sy,sz), sx,sy,sz in {-1,1}",
+  "bounded_support_probabilities": [
+    "129853789255849301/540431955284459520",
+    "850679929614427/36028797018963968",
+    "8156519325126565/36028797018963968",
+    "5254199565265579/540431955284459520",
+    "5254199565265579/540431955284459520",
+    "8156519325126565/36028797018963968",
+    "850679929614427/36028797018963968",
+    "129853789255849301/540431955284459520"
+  ],
+  "support_ball_center": [
+    0,
+    0,
+    38
+  ],
+  "support_ball_radius": 44,
+  "support_max_radius_squared": "1461+78*sqrt(30) < 1936",
+  "support_containment_exact_integer_check": [
+    182520,
+    225625
+  ],
+  "initial_product_kernel_projection_matrix": [
+    [
+      "18946933912737060199128344932666120748603/20678735914701632962054674154654460379171",
+      "19400171781069706767368507930299785834689/20678735914701632962054674154654460379171",
+      "23932550464396172449770137906636436695549/20678735914701632962054674154654460379171",
+      "466410347028480439246386446149359713124352/516968397867540824051366853866361509479275"
+    ],
+    [
+      "19400171781069706767368507930299785834689/20678735914701632962054674154654460379171",
+      "1",
+      "517460846414674529098878647078502495781739/516968397867540824051366853866361509479275",
+      "6903534746548130657456262248241990660381/6892911971567210987351558051551486793057"
+    ],
+    [
+      "23932550464396172449770137906636436695549/20678735914701632962054674154654460379171",
+      "517460846414674529098878647078502495781739/516968397867540824051366853866361509479275",
+      "1",
+      "1"
+    ],
+    [
+      "466410347028480439246386446149359713124352/516968397867540824051366853866361509479275",
+      "6903534746548130657456262248241990660381/6892911971567210987351558051551486793057",
+      "1",
+      "1"
+    ]
+  ],
+  "initial_product_projection_nonzero_rank2_minor": "15431977639780823658043781135792172188993776787424111661019058841718209312821392/427610119029971180858264668160283176028259930002473963520547705680572649090647241",
+  "initial_product_projection_recovered_mean": [
+    "19400171781069706767368507930299785834689/18946933912737060199128344932666120748603",
+    "23932550464396172449770137906636436695549/18946933912737060199128344932666120748603",
+    "466410347028480439246386446149359713124352/473673347818426504978208623316653018715075"
+  ],
+  "initial_product_projection_original_residual": [
+    "0",
+    "-761620392714001300834073743369454386932899335759925118955185848713041001617584197/897465761734064213771609701568673187636563880476649458432010497779278552816129022500",
+    "-450773323690578255744807170641113635898195838690391568226950909518765704006330227/224366440433516053442902425392168296909140970119162364608002624444819638204032255625"
+  ],
+  "initial_product_projection_original_residual_norm": 0.0021809722971806687,
+  "initial_product_projection_interpretation": "exact infinite imaginary-time limit for this unconstrained H; product consistency not preserved",
+  "original_implicit_root": [
+    1.0239978670661647,
+    1.2639765377278114,
+    0.9866328825843015
+  ],
+  "root_original_residual_norm": 3.1986720415755645e-17,
+  "physical_root_lifted_residual_norm": 5.238750013840908e-17,
+  "spurious_mean_original_residual_norm": 0.2605336403955884,
+  "spurious_normalized_lifted_residual_norm": 1.734723475976807e-18,
+  "spurious_normalized_energy": 3.009265538105056e-36,
+  "H_eigenvalues": [
+    -1.4116360873222652e-16,
+    0.0,
+    0.0,
+    0.0,
+    1.155017172925261e-36,
+    7.583854010581943e-21,
+    2.6040325078334363e-20,
+    0.47363558296969377,
+    0.7849836480454768,
+    3.4277529912070515
+  ],
+  "smallest_positive_eigenvalue": 0.47363558296969377,
+  "spurious_Schmidt_coefficients": [
+    0.8822946822638111,
+    0.4666716551141228,
+    0.05977650530960061,
+    0.014157308184012939
+  ],
+  "physical_root_overlap_with_spurious": 0.6019709742535767,
+  "note": "Floating diagnostics only; rank, PSD and zero residual follow from exact data above."
+}

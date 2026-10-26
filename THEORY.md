@@ -187,6 +187,8 @@ d_N(h):=\|u_{\rm true}(h)-u_{\rm Carleman}(h)\|
 
 **不同算法的全区间认证：** [GLOBAL_CORRECTION.md](GLOBAL_CORRECTION.md) 对已知预测轨道的线性缺陷校正，以严格传播常数 K 和误差尺度 a 验证 `2Ka<1` 及二次余项。它已给出 `[0,5]` 上的精度证书；不依赖本节 relifted Carleman 的全局 `L=21` 预算，也不表示已经获得量子加速。
 
+**新的候选算法审查：** [NEW_QUANTUM_CANDIDATES.md](NEW_QUANTUM_CANDIDATES.md) 区分有限光滑度黑盒的量子积分优势和显式解析 Lorenz 的成本；数值检验全时间线性系统的离散精度、条件数与预处理；并以精确有理反例检查非线性提升基态的乘积一致性。新离散的数值筛选没有冒充全区间证书。
+
 ### 4.3 Taylor 多项式误差
 
 ```math

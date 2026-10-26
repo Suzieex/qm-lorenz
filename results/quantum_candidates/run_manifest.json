@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "be54022f48b79ad3cf2aa0baa5d3d0e89be7efec",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "qiskit": "2.6.1",
+  "task": "same Lorenz63 known-input precise classical trajectory",
+  "validation": "36 exact local certificate replays; exact bounded-support lifted counterexample and initial-product kernel projection; 35 floating spacetime consistency checks",
+  "scope": "Native mean oracle statevector simulation and exact-law QAE simulation; no hardware/QLSA speedup claimed",
+  "unit_tests_passed": 50,
+  "exact_local_certificates_replayed": 36,
+  "exact_bounded_support_counterexamples": 1,
+  "numerical_spacetime_cases": 35,
+  "exact_initial_product_kernel_projection_checked": true
+}

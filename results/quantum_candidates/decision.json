@@ -1,0 +1,21 @@
+{
+  "task": "standard Lorenz63, known classical initial data, T=5, precise classical endpoint/trajectory",
+  "conclusion": "No same-task end-to-end quantum advantage established in this candidate search.",
+  "tested_candidates": [
+    "quantum residual integration",
+    "space-time QLSA/preconditioning",
+    "nonlinear effective-Hamiltonian lifting"
+  ],
+  "positive_query_result": "QAE beats Monte Carlo in part of the conditional oracle experiment, but exact finite enumeration and symbolic integration beat that workflow here",
+  "residual_exact_local_certificates": 36,
+  "residual_resource_cases": 108,
+  "spacetime_numerical_cases": 35,
+  "spacetime_numerically_qualified_cases": 3,
+  "exact_groundstate_counterexample": true,
+  "groundstate_counterexample_bounded_support": true,
+  "not_claimed": [
+    "No universal impossibility theorem",
+    "No full QLSA circuit or hardware timing speedup",
+    "No interval certificate for new space-time discretizations"
+  ]
+}
