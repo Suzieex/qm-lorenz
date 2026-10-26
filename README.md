@@ -6,6 +6,8 @@
 
 新增：[优先改进 1–4 的实现与验证](IMPROVEMENTS.md)：生成规则稀疏 block encoding、可实现的归一化收紧、联合参数搜索，以及经典预测器之后的量子余项读出。尚未建立单步量子优势，第五项的端到端加速分析未激活。
 
+新增：[更紧的单步截断误差认证](RESIDUAL_BOUNDS.md)。默认案例由旧公式约 0.0321 收紧到严格上界约 6.86162e-9；包络和矩阵级数使用精确有理运算，不以 DOP853 实测值代替保证。75 组不同初值／阶数／步长的原始数据与证书已保存。
+
 新增：[长期高精度验证](LONGTIME_VALIDATION.md)。测试到 T=30，包含两组初值、70/90 位参考解交叉检查、任意精度 Carleman 和有限 QAE 读出窗口。理想算术结果与量子读出结果分别报告。
 
 目标是贴近同初值的高精度经典数值轨道。这里不把目标改成概率分布，不做完整 Carleman 态层析，也不依赖关于混沌长期预测的假设。
@@ -55,8 +57,13 @@ OPENBLAS_NUM_THREADS=1 python scale_study.py --order 3 --h 0.001
 | `optimization_study.py` | 归一化对照、1792 个联合配置与经典预测器基线 |
 | `IMPROVEMENTS.md` | 前四项改进的公式、线路、资源和未满足的优势条件 |
 | `requirements-quantum.txt` | 可选 Qiskit 线路依赖 |
+| `residual_bounds.py` | 精确有理的分块／带符号路径单步截断界和局部包络 |
+| `residual_bound_study.py` | 严格界、数值估计与参考实测的分开对照 |
+| `verify_residual_certificates.py` | 无参考积分的证书重放 |
+| `RESIDUAL_BOUNDS.md` | 新界推导、保证对象、实验与适用条件 |
 | `results/short_time/` | T=5 精度、经典 RHS 次数与乐观量子读出预算 |
 | `results/optimization/` | 生成规则门数、参数搜索、验证误差与压缩 QPY 线路 |
+| `results/residual_bounds/` | 75 组严格上界、数值对照、精确证书及图表 |
 | `THEORY.md` | 归一化、尺度、截断与读出误差、单步／多步／多次运行的完整成本推导 |
 | `scale_study.py` | 固定物理问题扫描 S，验证相似变换并比较查询成本前因子 |
 | `results/scale_study.csv` | 尺度扫描原始数据，包含域范数界与保守截断界 |

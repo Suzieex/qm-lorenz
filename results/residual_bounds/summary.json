@@ -1,0 +1,32 @@
+{
+  "cases": 75,
+  "all_numerical_ideal_checks_passed": true,
+  "default_case": {
+    "case": "standard_N3_h0.001",
+    "initial_id": "standard",
+    "N": 3,
+    "h": 0.001,
+    "old_formula_float_evaluation": 0.03207833901948663,
+    "certified_block_global": "0.00658046144639205769304734",
+    "certified_block_local": "0.0000297008261247077130324622",
+    "certified_path_global": "0.000909146227760673447501324",
+    "certified_path_local": "6.86162025730136209617576E-9",
+    "certified_path_local_tail": "1.56510003595848742193687E-27",
+    "observed_ideal_mp_error": "0.000000006542730612128457463046186723830720008503",
+    "observed_float_implementation_error": 6.54272712894236e-09,
+    "numerical_triangle_estimate": 6.542735606346813e-09,
+    "quadrature_change_indicator": 8.831517259639105e-16,
+    "voc_reconstruction_error": 2.861839415634179e-31,
+    "reference_refinement_indicator": 0.0,
+    "certified_to_observed_ratio": 1.0487395346190427,
+    "float_implementation_exceeds_ideal_bound": false
+  },
+  "min_certified_to_observed_ratio": 1.0005793148990185,
+  "max_certified_to_observed_ratio": 5.471526327505029,
+  "float_implementation_exceeds_ideal_bound_count": 2,
+  "classes": {
+    "certified": "Fraction interval tube + signed path series + rational majorant tail; ideal exact-generator truncation.",
+    "numerical_estimate": "Numerical reference/16-32 point quadrature; no integration-error enclosure.",
+    "observation": "High precision direct ODE and Carleman series, or binary64 DOP853/expm; not certificates."
+  }
+}
