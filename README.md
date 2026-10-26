@@ -2,6 +2,8 @@
 
 本项目验证一条单步 workflow：**经典输入坐标 → 振幅编码单项式提升 → LCU 实现 Carleman 增量传播 → 只估计三个干涉量 → 恢复下一步坐标**。
 
+新增：[长期高精度验证](LONGTIME_VALIDATION.md)。测试到 T=30，包含两组初值、70/90 位参考解交叉检查、任意精度 Carleman 和有限 QAE 读出窗口。理想算术结果与量子读出结果分别报告。
+
 目标是贴近同初值的高精度经典数值轨道。这里不把目标改成概率分布，不做完整 Carleman 态层析，也不依赖关于混沌长期预测的假设。
 
 实现包含真实的有限维酉线路状态向量演算、有限 shots、标准 QAE 的精确概率分布模拟，以及经典轨道对照。**这是一套小规模算法验证，不是可扩展量子门编译器，也没有证明量子优势。**
@@ -12,11 +14,11 @@ Python 3.10+：
 
 ```bash
 python -m pip install -r requirements.txt
-python -m unittest -v test_validation.py
+python -m unittest -v test_validation.py test_long_validation.py
 OPENBLAS_NUM_THREADS=1 python experiment.py --out results
 ```
 
-Windows 可省略 `OPENBLAS_NUM_THREADS=1` 前缀。依赖仅为 NumPy、SciPy、Matplotlib，不需要量子硬件或 Qiskit。
+Windows 可省略 `OPENBLAS_NUM_THREADS=1` 前缀。依赖为 NumPy、SciPy、Matplotlib 和用于任意精度长期验证的 mpmath，不需要量子硬件或 Qiskit。
 
 默认实验随机种子为 `20261022`，每个读出设置进行 300 次独立重复：
 
@@ -37,6 +39,11 @@ OPENBLAS_NUM_THREADS=1 python scale_study.py --order 3 --h 0.001
 | `carleman.py` | Lorenz 模型、单项式生成元、酉扩张、LCU 状态向量、Hadamard 读出、QAE |
 | `experiment.py` | 单步精度、测量预算对照、补充多步实验、作图与数据导出 |
 | `test_validation.py` | 链式法则、非厄米 block encoding、Taylor 误差界、带符号读出、QAE 检验 |
+| `long_validation.py` | 两组初值的任意精度参考、阶数／步长扫描和有限 QAE 长期存活比例 |
+| `precision_extension.py` | N=13 的 70 位理想传播与 1e-8／1e-6 QAE 首次越界窗口 |
+| `test_long_validation.py` | 高精度参考细化、稀疏行递推与精确 QAE 拒绝采样检查 |
+| `write_longtime_report.py` | 从长期实验原始数据生成报告 |
+| `LONGTIME_VALIDATION.md` | 长期实验方法、结果、查询预算及适用范围 |
 | `THEORY.md` | 归一化、尺度、截断与读出误差、单步／多步／多次运行的完整成本推导 |
 | `scale_study.py` | 固定物理问题扫描 S，验证相似变换并比较查询成本前因子 |
 | `results/scale_study.csv` | 尺度扫描原始数据，包含域范数界与保守截断界 |
@@ -48,6 +55,7 @@ OPENBLAS_NUM_THREADS=1 python scale_study.py --order 3 --h 0.001
 | `results/trajectory.npz` | 参考轨道、理想 relifted 轨道、有限 shots 轨道 |
 | `results/single_step.png` | 单步精度、读出 RMSE、归一化因子 |
 | `results/trajectory.png` | 短时间多步验证 |
+| `results/longtime/` | T=30 长期验证的参考轨道、误差／首次越界 CSV、图表和资源统计 |
 
 ## 2. 模型、有界性与缩放
 

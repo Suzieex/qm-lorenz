@@ -1,0 +1,20 @@
+{
+  "ideal_N": 13,
+  "ideal_h": 0.002,
+  "ideal_digits": 70,
+  "qae_N": 9,
+  "qae_h": 0.001,
+  "qae_paths": 16,
+  "phase_bits": [
+    24,
+    32,
+    40,
+    44
+  ],
+  "thresholds": [
+    1e-08,
+    1e-06
+  ],
+  "interpretation": "Empirical same-initial-state trajectories, not rigorous enclosures or quantum hardware.",
+  "reference_note": "MP90 reference rounded to binary64; do not interpret errors below its rounding scale."
+}

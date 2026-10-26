@@ -1,0 +1,26 @@
+{
+  "horizon": 30.0,
+  "reference_sample_step": 0.001,
+  "initial_ids": [
+    "standard",
+    "attractor"
+  ],
+  "qae_paths_per_setting": 16,
+  "qae_order": 9,
+  "qae_h": 0.001,
+  "qae_phase_bits": [
+    16,
+    24,
+    32,
+    40
+  ],
+  "elapsed_seconds": 478.15850304700143,
+  "caveats": [
+    "Empirical refinement checks, not interval-certified enclosures.",
+    "Model beta is the exact value of its stored binary64 parameter.",
+    "High-precision Carleman is an ideal arithmetic benchmark, not a quantum circuit.",
+    "QAE uses exact-law classical rejection sampling; quantum query counts remain exponential in phase_bits.",
+    "QAE paths stop after prefix error .1; survival <=.01 remains well defined.",
+    "No hardware gate noise, fault tolerance, or quantum speedup is included."
+  ]
+}

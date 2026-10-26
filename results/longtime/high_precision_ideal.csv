@@ -1,0 +1,3 @@
+initial_id,N,h,horizon,arithmetic,reference_format,reference_rounding_scale,maximum_error,final_error,first_exit_1e_10,first_exit_1e_8,K,tail
+attractor,13,0.002,30.0,mp70,binary64-rounded MP90 reference,1.739889846174785e-14,2.962509521726833e-14,8.298179914700845e-15,,,60,1.1048056604764195089e-66
+standard,13,0.002,30.0,mp70,binary64-rounded MP90 reference,1.8399029387709204e-14,4.046493982922717e-15,1.4100877546922526e-15,,,60,1.1048056604764195089e-66

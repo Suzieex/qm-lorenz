@@ -290,3 +290,49 @@ def qae_samples(p, phase_bits, repeats, trials, rng):
     outcomes = rng.choice(size, size=(trials, repeats), p=distribution)
     estimates = np.sin(np.pi*outcomes/size)**2
     return np.median(estimates, axis=1)
+
+
+def qae_rejection_samples(probabilities, phase_bits, repeats, rng):
+    """Sample the exact ideal canonical QAE law without an M-size FFT.
+
+    Simulator optimization ONLY: quantum query cost is still repeats*(2M-1).
+    QAE is the equal mixture of QPE at phases +/-asin(sqrt(p))/pi.
+    At integer offset n from the nearest phase grid point its probability is
+    <=1 for n=0 and <=1/n^2 otherwise. Sample this envelope with a Zipf(2)
+    law; expected proposals <=1+pi^2/3. Rejection is classical simulation.
+    Double arithmetic limits phase_bits to <=44; it is not an arbitrary-
+    precision or noisy-hardware model.
+    """
+    p = np.asarray(probabilities, dtype=float)
+    if np.any((p < 0) | (p > 1)):
+        raise ValueError('Probability outside [0,1]')
+    if not 1 <= phase_bits <= 44 or repeats < 1 or repeats % 2 == 0:
+        raise ValueError('Use 1..44 phase bits and positive odd repeats')
+    M = 2**phase_bits
+    shape = p.shape+(repeats,)
+    phase = np.broadcast_to(np.arcsin(np.sqrt(p))[..., None]/np.pi, shape)
+    phase = np.where(rng.random(shape) < .5, phase, -phase)
+    z = (M*phase).ravel()
+    nearest = np.floor(z+.5).astype(np.int64)
+    offset = z-nearest
+    outcomes = np.zeros(z.size, dtype=np.int64)
+    remaining = np.arange(z.size)
+    mass = 1+np.pi**2/3
+    while remaining.size:
+        zero = rng.random(remaining.size) < 1/mass
+        n = np.zeros(remaining.size, dtype=np.int64)
+        count = np.count_nonzero(~zero)
+        n[~zero] = rng.zipf(2., count)*rng.choice([-1, 1], count)
+        valid = (n >= -M//2) & (n < M//2)
+        # Circular distance avoids subtracting two large nearly equal phases.
+        distance = n.astype(float)-offset[remaining]
+        distance = np.where(distance > M/2, distance-M,
+                            np.where(distance < -M/2, distance+M, distance))
+        probability = (np.sinc(distance)/np.sinc(distance/M))**2
+        acceptance = probability*np.where(n == 0, 1., n.astype(float)**2)
+        accepted = valid & (rng.random(remaining.size) <= np.minimum(1., acceptance))
+        chosen = remaining[accepted]
+        outcomes[chosen] = (nearest[chosen]+n[accepted]) % M
+        remaining = remaining[~accepted]
+    estimates = np.sin(np.pi*outcomes.reshape(shape)/M)**2
+    return np.median(estimates, axis=-1)

@@ -1,0 +1,2454 @@
+{
+  "deterministic": [
+    {
+      "initial_id": "attractor",
+      "N": 13,
+      "h": 0.002,
+      "horizon": 30.0,
+      "arithmetic": "mp70",
+      "reference_format": "binary64-rounded MP90 reference",
+      "reference_rounding_scale": 1.739889846174785e-14,
+      "maximum_error": 2.962509521726833e-14,
+      "final_error": 8.298179914700845e-15,
+      "first_exit_1e_10": null,
+      "first_exit_1e_8": null,
+      "K": 60,
+      "tail": "1.1048056604764195089e-66"
+    },
+    {
+      "initial_id": "standard",
+      "N": 13,
+      "h": 0.002,
+      "horizon": 30.0,
+      "arithmetic": "mp70",
+      "reference_format": "binary64-rounded MP90 reference",
+      "reference_rounding_scale": 1.8399029387709204e-14,
+      "maximum_error": 4.046493982922717e-15,
+      "final_error": 1.4100877546922526e-15,
+      "first_exit_1e_10": null,
+      "first_exit_1e_8": null,
+      "K": 60,
+      "tail": "1.1048056604764195089e-66"
+    }
+  ],
+  "exits": [
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 0.35000000000000003,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 0.277,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 0.883,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 0.326,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 0.12,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 0.18,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 0.679,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 0.275,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 0.199,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 0.96,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 0.197,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 0.20800000000000002,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 0.20800000000000002,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 0.327,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 0.331,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 0.107,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 0.212,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 3.359,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 1.676,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 7.1770000000000005,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 1.721,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 7.1160000000000005,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 0.23,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 5.514,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 1.0090000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 5.498,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 1.046,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 5.601,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 0.301,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 5.571,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 0.34700000000000003,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 5.5200000000000005,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 0.311,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 7.077,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 0.262,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 5.522,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 0.3,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 7.102,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 1.706,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 5.578,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 0.256,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 3.494,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 0.233,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 5.596,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 0.192,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 5.479,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 0.353,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 5.554,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 3.205,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 7.144,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 1.8760000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 7.165,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 1.788,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 7.086,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 1.796,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 7.127,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 3.464,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 7.367,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 1.797,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 7.111,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 1.7630000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 7.0600000000000005,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 3.3080000000000003,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 7.237,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 1.798,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 7.112,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 3.29,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 7.216,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 3.257,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 7.186,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 3.281,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 7.22,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 3.315,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 7.232,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 1.897,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 7.127,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 3.3240000000000003,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 7.247,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 3.458,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 7.4830000000000005,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 0.122,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 0.105,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 0.214,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 0.14,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 0.17,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 0.137,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 0.394,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 0.171,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 0.10300000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 0.057,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 0.203,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 0.28700000000000003,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 0.107,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 0.274,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 0.052000000000000005,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 0.001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 0.107,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 0.227,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 13.843,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 0.295,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 13.931000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 0.265,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 13.073,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 0.289,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 13.095,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 0.202,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 12.363,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 0.227,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 12.285,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 0.23500000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 12.308,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 0.134,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 13.998000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 0.23800000000000002,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 13.082,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 0.155,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 12.327,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 1.307,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 13.029,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 0.266,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 13.013,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 0.225,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 16.734,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 0.227,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 13.806000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 0.219,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 13.037,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 0.356,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 12.996,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 0,
+      "threshold": 1e-08,
+      "first_exit": 10.964,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 0,
+      "threshold": 1e-06,
+      "first_exit": 16.755,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 1,
+      "threshold": 1e-08,
+      "first_exit": 13.849,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 1,
+      "threshold": 1e-06,
+      "first_exit": 18.423000000000002,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 2,
+      "threshold": 1e-08,
+      "first_exit": 12.275,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 2,
+      "threshold": 1e-06,
+      "first_exit": 16.865000000000002,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 3,
+      "threshold": 1e-08,
+      "first_exit": 10.899000000000001,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 3,
+      "threshold": 1e-06,
+      "first_exit": 16.747,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 4,
+      "threshold": 1e-08,
+      "first_exit": 12.242,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 4,
+      "threshold": 1e-06,
+      "first_exit": 16.823,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 5,
+      "threshold": 1e-08,
+      "first_exit": 10.246,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 5,
+      "threshold": 1e-06,
+      "first_exit": 16.731,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 6,
+      "threshold": 1e-08,
+      "first_exit": 12.984,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 6,
+      "threshold": 1e-06,
+      "first_exit": 18.302,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 7,
+      "threshold": 1e-08,
+      "first_exit": 10.243,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 7,
+      "threshold": 1e-06,
+      "first_exit": 16.758,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 8,
+      "threshold": 1e-08,
+      "first_exit": 10.927,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 8,
+      "threshold": 1e-06,
+      "first_exit": 16.753,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 9,
+      "threshold": 1e-08,
+      "first_exit": 11.663,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 9,
+      "threshold": 1e-06,
+      "first_exit": 16.873,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 10,
+      "threshold": 1e-08,
+      "first_exit": 11.533,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 10,
+      "threshold": 1e-06,
+      "first_exit": 16.752,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 11,
+      "threshold": 1e-08,
+      "first_exit": 8.921,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 11,
+      "threshold": 1e-06,
+      "first_exit": 13.996,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 12,
+      "threshold": 1e-08,
+      "first_exit": 10.953,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 12,
+      "threshold": 1e-06,
+      "first_exit": 16.788,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 13,
+      "threshold": 1e-08,
+      "first_exit": 10.288,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 13,
+      "threshold": 1e-06,
+      "first_exit": 16.758,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 14,
+      "threshold": 1e-08,
+      "first_exit": 11.598,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 14,
+      "threshold": 1e-06,
+      "first_exit": 16.803,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 15,
+      "threshold": 1e-08,
+      "first_exit": 8.307,
+      "observation_end": 30.0,
+      "censored": false
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "path": 15,
+      "threshold": 1e-06,
+      "first_exit": 13.992,
+      "observation_end": 30.0,
+      "censored": false
+    }
+  ],
+  "settings": [
+    {
+      "initial_id": "attractor",
+      "phase_bits": 24,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 234881017,
+      "A_calls_per_full_trajectory": 21139291530000,
+      "base_calls_per_full_trajectory": 317089372950000,
+      "simulated_path_steps": 16,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 32,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 60129542137,
+      "A_calls_per_full_trajectory": 5411658792330000,
+      "base_calls_per_full_trajectory": 81174881884950000,
+      "simulated_path_steps": 5627,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 40,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 15393162788857,
+      "A_calls_per_full_trajectory": 1385384650997130000,
+      "base_calls_per_full_trajectory": 20780769764956950000,
+      "simulated_path_steps": 90758,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "attractor",
+      "phase_bits": 44,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 246290604621817,
+      "A_calls_per_full_trajectory": 22166154415963530000,
+      "base_calls_per_full_trajectory": 332492316239452950000,
+      "simulated_path_steps": 115120,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 24,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 234881017,
+      "A_calls_per_full_trajectory": 21139291530000,
+      "base_calls_per_full_trajectory": 317089372950000,
+      "simulated_path_steps": 16,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 32,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 60129542137,
+      "A_calls_per_full_trajectory": 5411658792330000,
+      "base_calls_per_full_trajectory": 81174881884950000,
+      "simulated_path_steps": 2643,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 40,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 15393162788857,
+      "A_calls_per_full_trajectory": 1385384650997130000,
+      "base_calls_per_full_trajectory": 20780769764956950000,
+      "simulated_path_steps": 212920,
+      "stop_threshold": 1e-06
+    },
+    {
+      "initial_id": "standard",
+      "phase_bits": 44,
+      "paths": 16,
+      "N": 9,
+      "h": 0.001,
+      "repeats": 7,
+      "K": 15,
+      "A_calls_per_coordinate_step": 246290604621817,
+      "A_calls_per_full_trajectory": 22166154415963530000,
+      "base_calls_per_full_trajectory": 332492316239452950000,
+      "simulated_path_steps": 266119,
+      "stop_threshold": 1e-06
+    }
+  ]
+}
