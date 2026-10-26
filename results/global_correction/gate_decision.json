@@ -1,0 +1,23 @@
+{
+  "T": 5,
+  "target": 1e-08,
+  "gate1": "passed for both initial states with sufficiently accurate guides; all-times rational certificates",
+  "gate1_passing_cases": [
+    {
+      "initial": "standard",
+      "guide_rtol": "1e-08",
+      "upper": "1.62867570856576736027487E-11"
+    },
+    {
+      "initial": "attractor",
+      "guide_rtol": "1e-10",
+      "upper": "4.13439078613504346906451E-10"
+    }
+  ],
+  "gate2": "not passed: no end-to-end quantum advantage demonstrated",
+  "high_precision_certificate": "already produces the final classical answer",
+  "coarse_certificate": "degree12 can certify linearization without already producing a target-accurate classical corrected polynomial",
+  "classical_control": "same degree12 K certificate plus degree20 vector-only completion passes both cases",
+  "quantum_status": "conditional endpoint-state/QAE budgets only; no efficient QLSA/coherent coefficient oracle implementation claimed",
+  "not_claimed": "No universal impossibility theorem for Lorenz quantum algorithms, no hardware timing speed ratio"
+}

@@ -1,0 +1,5 @@
+initial,guide_rtol,source_vector_degree,completion_degree,certified_linear_error,certified_total_error,classical_completion_pass,extra_scalar_integer_multiplications,extra_classical_seconds,hypothetical_QAE_state_preparation_calls,comparison
+standard,1e-08,12,16,9.81406015063978940847488E-8,9.81612709472145790884786E-8,False,699660,1.2081628299929434,5767124,same certified K reused; integer multiplications and quantum oracle calls are different units
+standard,1e-08,12,20,3.05240301647492787403081E-11,4.68359269351641785259943E-11,True,871884,1.2870340749941533,5767124,same certified K reused; integer multiplications and quantum oracle calls are different units
+attractor,1e-10,12,16,2.87285447132545079658124E-8,2.91953596700835179028701E-8,False,814320,1.4000508619938046,5767124,same certified K reused; integer multiplications and quantum oracle calls are different units
+attractor,1e-10,12,20,3.53035776133777319033153E-12,4.16975796667673611083995E-10,True,1014768,1.4371446970035322,5767124,same certified K reused; integer multiplications and quantum oracle calls are different units

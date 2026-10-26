@@ -185,6 +185,8 @@ d_N(h):=\|u_{\rm true}(h)-u_{\rm Carleman}(h)\|
 
 **后续顺序研究：** [RESEARCH_SEQUENCE.md](RESEARCH_SEQUENCE.md) 将该界扩展到任意局部中心、正的各向异性尺度和层权，并独立构造 Chebyshev 残差。经典预测器只在 p<=N-1 时与一般二次场的保留 Carleman 时间项保证一致。新报告也实际运行 T=5 的全局误差预算，区分严格统一稳定性界和数值终端变分诊断。
 
+**不同算法的全区间认证：** [GLOBAL_CORRECTION.md](GLOBAL_CORRECTION.md) 对已知预测轨道的线性缺陷校正，以严格传播常数 K 和误差尺度 a 验证 `2Ka<1` 及二次余项。它已给出 `[0,5]` 上的精度证书；不依赖本节 relifted Carleman 的全局 `L=21` 预算，也不表示已经获得量子加速。
+
 ### 4.3 Taylor 多项式误差
 
 ```math

@@ -1,0 +1,12 @@
+{
+  "target": "1/100000000",
+  "T": 5.0,
+  "cases": 4,
+  "accuracy_passes": 2,
+  "advantage_passes": 0,
+  "proof_scope": "All times: exact polynomial linear approximant plus certified nonlinear remainder. Uniform exact-evaluation-to-binary64 rounding included; ordinary floating Horner observations are separate.",
+  "certificate_method": "dyadic polynomial residual validation, signed fundamental products, exact outward norms; no reference in certification",
+  "decisive_cost_issue": "certificate constructs full classical corrected trajectory; it already solves each passing task",
+  "qae_scope": "sufficient readout budgets assuming a normalized endpoint-state oracle; no quantum linear-solver implementation or speedup claimed",
+  "classical_direct_scope": "empirical DOP853 comparison only; certified classical alternative is the validated corrected polynomial itself"
+}
