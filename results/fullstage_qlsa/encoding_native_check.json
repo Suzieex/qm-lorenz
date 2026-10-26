@@ -1,0 +1,43 @@
+{
+  "dimension": 12,
+  "padded_dimension": 16,
+  "shifts": 10,
+  "sparse_lookup_entries": 58,
+  "alpha": 2.5375,
+  "alpha_exact": "2925538317939874131/1152921504606846976",
+  "data_qubits": 4,
+  "type_qubits": 4,
+  "lookup_CX_upper_bound": 9164,
+  "classical_lookup_entries_prepared": 58,
+  "normalization_status": "exact sum of diagonal maxima for the displayed shift LCU",
+  "resource_status": "lookup CX upper bound only; PREPARE, shifts and synthesis are additional",
+  "oracle_status": "sparse compiled lookup paid explicitly; no free QRAM or fast arithmetic claimed",
+  "qubits": 20,
+  "logical_gates": {
+    "ccx": 1781,
+    "x": 683,
+    "cry": 74,
+    "cx": 18,
+    "ry": 2
+  },
+  "elementary_gates": {
+    "u": 11488,
+    "cx": 9100
+  },
+  "depth": 12872,
+  "all_padded_columns_tested": 16,
+  "maximum_block_entry_error": 1.1102230246251565e-16,
+  "caveat": "native circuit verification of a small stage matrix; not a QLSA solve or hardware timing",
+  "rhs_and_signed_readout": {
+    "rhs_preparation_maximum_amplitude_error": 1.1102230246251565e-16,
+    "rhs_preparation_gates": {
+      "u": 461,
+      "cx": 358
+    },
+    "signed_test_probability": 0.48837426496083297,
+    "signed_test_expected": 0.4883742649608332,
+    "signed_test_error": 2.220446049250313e-16,
+    "coordinate": 10,
+    "scope": "RHS loading and signed B/alpha overlap executed; inverse block not implemented"
+  }
+}

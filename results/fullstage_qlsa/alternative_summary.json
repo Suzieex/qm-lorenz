@@ -1,0 +1,73 @@
+{
+  "task": "Lorenz63, known classical initial data, T=5, precise classical endpoint",
+  "exact_parameters": [
+    "10",
+    "28",
+    "6004799503160661/2251799813685248"
+  ],
+  "sources": [
+    {
+      "method": "Chebyshev quantum spectral ODE",
+      "source": "https://arxiv.org/abs/1901.00961",
+      "scope": "linear time-dependent ODE; prepares a state proportional to the solution",
+      "unresolved_here": "must first supply a valid nonlinear-to-linear reduction and charge classical coordinate extraction"
+    },
+    {
+      "method": "quantum Newton",
+      "source": "https://arxiv.org/abs/2109.08470",
+      "scope": "QLSA plus l_infinity tomography between iterations; paper states log^4(N)/epsilon_s^2 per iteration",
+      "unresolved_here": "the three physical coordinates are not the full time-coefficient vector needed to rebuild a generic Newton oracle"
+    },
+    {
+      "method": "quantum multigrid",
+      "source": "https://arxiv.org/abs/2404.07466",
+      "scope": "finite-element linear systems; output encodes a sequence of iterates in a quantum state",
+      "unresolved_here": "a Lorenz causal time-system needs its own contraction, transfer operators, implementation and readout analysis"
+    },
+    {
+      "method": "compact iterative quantum PDE algorithms",
+      "source": "https://doi.org/10.1103/PhysRevResearch.7.023262",
+      "scope": "LCU matrix-vector/inversion iterations for discretized fluid equations",
+      "unresolved_here": "the PDE grid-size advantage and best-case access model do not establish advantage for fixed three-dimensional Lorenz"
+    }
+  ],
+  "references": {
+    "standard": {
+      "primary_degree": 80,
+      "primary_steps": 250,
+      "primary_digits": 100,
+      "cross_degree": 88,
+      "cross_steps": 200,
+      "cross_digits": 110,
+      "observed_reference_difference": "1.1486782017540201535e-62",
+      "status": "independent step/order/precision comparison, NOT a rigorous reference enclosure"
+    },
+    "attractor": {
+      "primary_degree": 80,
+      "primary_steps": 250,
+      "primary_digits": 100,
+      "cross_degree": 88,
+      "cross_steps": 200,
+      "cross_digits": 110,
+      "observed_reference_difference": "6.1114106835580971821e-68",
+      "status": "independent step/order/precision comparison, NOT a rigorous reference enclosure"
+    }
+  },
+  "precision_scan_cases": 16,
+  "digital_encoding": {
+    "mapping": "|u>|0> -> |u>|F_b(u)>; compute-copy-uncompute can clean work registers",
+    "readout": "basis-encoded deterministic bits can be measured once in the ideal circuit",
+    "consequence": "there is no universal 1/epsilon readout lower bound for the original known-input classical problem",
+    "cost": "a reversible implementation of a classical Taylor circuit inherits that circuit arithmetic and uncomputation work",
+    "caveat": "compiled multipliers are arithmetic components; the complete reversible Lorenz integrator is not implemented"
+  },
+  "iterative_refinement": {
+    "conditional_recurrence": "e_(k+1) <= theta*e_k + C*e_k^2 with fixed relative solve error theta<1",
+    "iterations": "after entering the local contraction region, O(log(1/epsilon)) iterations are possible",
+    "caveat": "not a Lorenz algorithm or certification by itself; rebuilding an entire time-dependent guide generally requires time coefficients, not only three endpoint numbers",
+    "classical_comparison": "classical iterative refinement or direct high-order integration must receive the same warm start and preprocessing"
+  },
+  "same_task_advantage_established": false,
+  "conclusion": "digital encoding and iterative refinement are valid precision loopholes, but no lower-work Lorenz quantum algorithm was obtained; state-output spectral/Newton/multigrid claims do not supply one automatically",
+  "validation": "16 observed Taylor cases, two order/step/precision reference cross-checks, 3 native multiplier statevector checks, 5 compiled multiplier resource records"
+}

@@ -1,0 +1,23 @@
+{
+  "task": "Lorenz63, known classical initial data, T=5, precise classical endpoint",
+  "same_task_quantum_advantage_established": false,
+  "fullstage_cases": 24,
+  "numerical_target_passes": 20,
+  "implemented_block_encoding": "explicit sparse diagonal/shift LCU; small native circuit verified",
+  "coefficient_loading": "charged sparse lookup; no efficient arithmetic oracle claimed",
+  "rigorous_classical_stage_polynomial_certificates": 2,
+  "improvements_tested": [
+    "increment stages",
+    "quadrature weights",
+    "block Jacobi",
+    "cancelled/reencoded prefix",
+    "endpoint padding",
+    "inverse elements",
+    "digital arithmetic"
+  ],
+  "no_claims": [
+    "No complete QLSA run",
+    "No universal impossibility theorem",
+    "No quantum/classical clock-time ratio"
+  ]
+}

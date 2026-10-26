@@ -1,0 +1,5 @@
+M,T,s,alphaP,alphaK,alphaP_times_h,cancelled_composed_alpha,directly_reencoded_shift_alpha,naive_composed_alpha,scope
+16,5,4,16.0,47.016424710910165,5.0,753.2627953745626,688.8292336020362,752.2627953745626,constant Lorenz Jacobian linear control; not nonlinear trajectory accuracy
+32,5,4,32.0,23.508212355455083,5.0,753.2627953745626,694.6119405316717,761.2627953745626,constant Lorenz Jacobian linear control; not nonlinear trajectory accuracy
+64,5,4,64.0,11.754106177727541,5.0,753.2627953745626,697.5032939964894,825.2627953745626,constant Lorenz Jacobian linear control; not nonlinear trajectory accuracy
+128,5,4,128.0,5.877053088863771,5.0,753.2627953745626,698.9489707288984,953.2627953745626,constant Lorenz Jacobian linear control; not nonlinear trajectory accuracy

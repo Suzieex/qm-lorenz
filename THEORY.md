@@ -189,6 +189,8 @@ d_N(h):=\|u_{\rm true}(h)-u_{\rm Carleman}(h)\|
 
 **新的候选算法审查：** [NEW_QUANTUM_CANDIDATES.md](NEW_QUANTUM_CANDIDATES.md) 区分有限光滑度黑盒的量子积分优势和显式解析 Lorenz 的成本；数值检验全时间线性系统的离散精度、条件数与预处理；并以精确有理反例检查非线性提升基态的乘积一致性。新离散的数值筛选没有冒充全区间证书。
 
+**后续完整阶段实现：** [FULLSTAGE_QLSA.md](FULLSTAGE_QLSA.md) 给出不预编译传播矩阵的 Gauss 全阶段系统、可执行 shift-LCU 归一化、消去后重编码与末端读出成本。[理论审计](FULLSTAGE_THEORY_NOTES.md)分别处理求逆、加载与读出误差。新增严格残差证书认证两份明确的经典连续多项式，未被当作 QLSA 返回值的精度或优势证明。
+
 ### 4.3 Taylor 多项式误差
 
 ```math

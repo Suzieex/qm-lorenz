@@ -1,0 +1,14 @@
+{
+  "Lorenz_padding_cases": 8,
+  "scalar_controls": 6,
+  "Lorenz_prefix_cases": 4,
+  "prefix_scaling_controls": 4,
+  "endpoint_padding_exact_algebra": true,
+  "query_status": "all displayed inverse-norm dependent resource values are numerical feasibility diagnostics",
+  "conclusion": "padding helps endpoint probability but shifts inverse norm; direct inverse-element readout replaces history probability by inverse normalization",
+  "not_claimed": [
+    "No universal quantum lower bound",
+    "No full QSVT/QLSA circuit",
+    "No rigorous singular-value certificate"
+  ]
+}

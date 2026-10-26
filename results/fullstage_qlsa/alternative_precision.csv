@@ -1,0 +1,17 @@
+initial,T,step,steps,degree,arithmetic_digits,observed_endpoint_error,observed_achieved_bits,target_1e8_observed_pass,target_1e20_observed_pass,target_1e40_observed_pass,seconds,quadratic_convolution_products,other_scalar_products,divisions_by_small_integer,status
+standard,5,0.05,100,8,100,0.0102565606726902357608138,6.60730915593469,False,False,False,0.03093050500319805,7200,4800,2400,observed multiprecision error; no interval certification
+standard,5,0.05,100,12,100,0.00113505289265858420603455,9.78302475701527,False,False,False,0.055755137000232935,15600,7200,3600,observed multiprecision error; no interval certification
+standard,5,0.05,100,16,100,0.0000523071867131114065607471,14.22263129616603,False,False,False,0.08934873901307583,27200,9600,4800,observed multiprecision error; no interval certification
+standard,5,0.05,100,24,100,1.18020008232831395741713e-8,26.33639329500924,False,False,False,0.20789271799731068,60000,14400,7200,observed multiprecision error; no interval certification
+standard,5,0.05,100,32,100,7.85496696062839952595807e-12,36.88953193134502,True,False,False,0.39952078799251467,105600,19200,9600,observed multiprecision error; no interval certification
+standard,5,0.05,100,48,100,4.20874286103930619267699e-19,61.04324443393543,True,False,False,0.8855045499949483,235200,28800,14400,observed multiprecision error; no interval certification
+standard,5,0.05,100,64,100,1.8555700639341909086559e-25,82.15633989581472,True,True,False,1.5275598589942092,416000,38400,19200,observed multiprecision error; no interval certification
+standard,5,0.05,100,96,100,4.75672294792158333233529e-39,127.3052277016468,True,True,False,2.5465474279917544,931200,57600,28800,observed multiprecision error; no interval certification
+attractor,5,0.05,100,8,100,0.168784063523839119924179,2.566749402693639,False,False,False,0.030539668994606473,7200,4800,2400,observed multiprecision error; no interval certification
+attractor,5,0.05,100,12,100,0.00202785886330357799709392,8.945827038779225,False,False,False,0.05493477699928917,15600,7200,3600,observed multiprecision error; no interval certification
+attractor,5,0.05,100,16,100,0.0000239835228552346623893348,15.347596887724283,False,False,False,0.08559497399255633,27200,9600,4800,observed multiprecision error; no interval certification
+attractor,5,0.05,100,24,100,2.45753916615102937069071e-9,28.600138444801242,True,False,False,0.17927310700179078,60000,14400,7200,observed multiprecision error; no interval certification
+attractor,5,0.05,100,32,100,3.40579616162410692041976e-13,41.41707314185871,True,False,False,0.29144312199787237,105600,19200,9600,observed multiprecision error; no interval certification
+attractor,5,0.05,100,48,100,3.10496804354130771307809e-21,68.12591157238909,True,True,False,0.6684040530089987,235200,28800,14400,observed multiprecision error; no interval certification
+attractor,5,0.05,100,64,100,7.89070826619432412102159e-30,96.67768804495424,True,True,False,1.0959264390112367,416000,38400,19200,observed multiprecision error; no interval certification
+attractor,5,0.05,100,96,100,2.21872703077033903207142e-45,148.33703208575744,True,True,True,2.4537347150035203,931200,57600,28800,observed multiprecision error; no interval certification

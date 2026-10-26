@@ -1,0 +1,69 @@
+[
+  {
+    "bits_per_operand": 2,
+    "output_bits": 4,
+    "qubits": 8,
+    "u_gates": 146,
+    "cx_gates": 120,
+    "classical_schoolbook_partial_AND_terms": 4,
+    "statevector_checked": true,
+    "status": "native arithmetic component only; elementary quantum and classical gates are not equal-time units",
+    "a": 1,
+    "b": 3,
+    "expected_product": 3,
+    "correct_computational_basis_probability": 0.9999999999999976,
+    "synthesis_scope": "ideal continuous u rotations; fault-tolerant synthesis and the complete solver are not counted"
+  },
+  {
+    "bits_per_operand": 3,
+    "output_bits": 6,
+    "qubits": 12,
+    "u_gates": 436,
+    "cx_gates": 376,
+    "classical_schoolbook_partial_AND_terms": 9,
+    "statevector_checked": true,
+    "status": "native arithmetic component only; elementary quantum and classical gates are not equal-time units",
+    "a": 5,
+    "b": 7,
+    "expected_product": 35,
+    "correct_computational_basis_probability": 0.9999999999999984,
+    "synthesis_scope": "ideal continuous u rotations; fault-tolerant synthesis and the complete solver are not counted"
+  },
+  {
+    "bits_per_operand": 4,
+    "output_bits": 8,
+    "qubits": 16,
+    "u_gates": 918,
+    "cx_gates": 840,
+    "classical_schoolbook_partial_AND_terms": 16,
+    "statevector_checked": true,
+    "status": "native arithmetic component only; elementary quantum and classical gates are not equal-time units",
+    "a": 13,
+    "b": 15,
+    "expected_product": 195,
+    "correct_computational_basis_probability": 0.9999999999999971,
+    "synthesis_scope": "ideal continuous u rotations; fault-tolerant synthesis and the complete solver are not counted"
+  },
+  {
+    "bits_per_operand": 8,
+    "output_bits": 16,
+    "qubits": 32,
+    "u_gates": 5606,
+    "cx_gates": 5976,
+    "classical_schoolbook_partial_AND_terms": 64,
+    "statevector_checked": false,
+    "status": "native arithmetic component only; elementary quantum and classical gates are not equal-time units",
+    "synthesis_scope": "ideal continuous u rotations; fault-tolerant synthesis and the complete solver are not counted"
+  },
+  {
+    "bits_per_operand": 16,
+    "output_bits": 32,
+    "qubits": 64,
+    "u_gates": 42678,
+    "cx_gates": 46104,
+    "classical_schoolbook_partial_AND_terms": 256,
+    "statevector_checked": false,
+    "status": "native arithmetic component only; elementary quantum and classical gates are not equal-time units",
+    "synthesis_scope": "ideal continuous u rotations; fault-tolerant synthesis and the complete solver are not counted"
+  }
+]

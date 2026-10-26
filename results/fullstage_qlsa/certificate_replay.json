@@ -1,0 +1,11 @@
+{
+  "certificates": 2,
+  "all_times_passes": 2,
+  "source_certificates_replayed": true,
+  "source_sha256": [
+    "61c456dee675ea04bac0d6c9ca12936d713fd5159eca869e3228e08d4ba1633b",
+    "de0753f33f4f02ed011e3f0957d41dfb79c80818987c931ce2a0af80f1a5f322"
+  ],
+  "stage_residual_replay": "exact rational algebra, no reference ODE or numerical solve",
+  "scope": "only already certified K and nonlinear remainder reused; full source proof replay requires --verify-source"
+}

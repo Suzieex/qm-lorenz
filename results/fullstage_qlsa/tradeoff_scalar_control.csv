@@ -1,0 +1,7 @@
+original_steps,padding_copies,dimension,exact_spectrum_sigma_max_formula,exact_spectrum_sigma_min_formula,numerical_condition,endpoint_union_probability,condition_times_amplification,scope
+64,0,64,1.9994069396902787,0.024352829603995065,82.10162729353954,0.015625,656.8130183483163,analytic scalar x_prime=0 control; not a Lorenz lower bound
+64,8,72,1.9995305960369683,0.02166573246007991,92.29000679857897,0.125,261.03555857211103,analytic scalar x_prime=0 control; not a Lorenz lower bound
+64,16,80,1.9996192549961453,0.019512688278516325,102.47789676411462,0.2125,222.3057706133237,analytic scalar x_prime=0 control; not a Lorenz lower bound
+64,32,96,1.9997350429144478,0.01627750243594537,122.85269504850218,0.34375,209.53826072446415,analytic scalar x_prime=0 control; not a Lorenz lower bound
+64,64,128,1.9998505733394651,0.012224019818983016,163.60007615774987,0.5078125,229.57881400543238,analytic scalar x_prime=0 control; not a Lorenz lower bound
+64,128,192,1.999933415080877,0.00815995827948871,245.09113240296978,0.671875,299.0083783412161,analytic scalar x_prime=0 control; not a Lorenz lower bound

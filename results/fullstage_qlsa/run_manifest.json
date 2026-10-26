@@ -1,0 +1,19 @@
+{
+  "baseline_commit": "b903ea92f7bcd1c89e0e9e9f88ba67c3189d6042",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "qiskit": "2.6.1",
+  "tests_passed": 64,
+  "stage_cases": 24,
+  "numerical_target_passes": 20,
+  "classical_polynomial_all_times_certificates": 2,
+  "source_certificates_replayed": true,
+  "native_stage_block_dimension": 12,
+  "native_padded_columns_tested": 16,
+  "native_meaning": "B/alpha block, RHS preparation and signed interference; no QLSA",
+  "precision_scan_cases": 16,
+  "quantum_advantage_established": false,
+  "scope": "Numeric singular diagnostics, exact classical polynomial certificates, native circuit components; no complete QLSA or hardware speedup"
+}

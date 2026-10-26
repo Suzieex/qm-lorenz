@@ -28,6 +28,7 @@ def report():
         not_claimed=['No universal impossibility theorem','No full QLSA circuit or hardware timing speedup','No interval certificate for new space-time discretizations'])
     (OUT/'decision.json').write_text(json.dumps(decision,indent=2))
     lines=['# 新量子算法候选：检验与适用边界','',
+        '后续更新：[完整配点阶段QLSA](FULLSTAGE_QLSA.md)已实现本报告保留的直接阶段系统，并增加严格连续多项式证书。本报告中“未实现完整阶段系统”等表述记录本轮候选搜索时的状态。','',
         '**本轮保持 Lorenz63、已知初值、T=5、经典高精度轨道输出的任务，没有改成高维系统或集合统计。检验了三类新的候选：量子残差积分、全时间量子线性求解、有效 Hamiltonian 基态求解。尚未建立同任务的端到端量子优势。**','',
         '有一个正面但有限的结果：条件性均值 oracle 实验确实显示了 QAE 相对 Monte Carlo 的查询收益；换回已知多项式 Lorenz，优化后的确定性经典方法更便宜。下面分别保留正面结果、正确性失败和资源限制。','',
         '参数约定沿用全局证书：sigma=10、rho=28，beta取程序存储的binary64数8/3的精确有理值；严格代数与误差界针对这一模型。初值为(1,1,1)与(-8,8,27)，局部h取文中十进制有理数。数学上精确beta=8/3与此模型的差异若需认证，应另计参数扰动，不能隐含忽略。','',

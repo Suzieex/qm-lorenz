@@ -1,0 +1,10 @@
+{
+  "cases": 24,
+  "numerical_target_passes": 20,
+  "maximum_global_structured_relative_difference": 1.8426832873615407e-14,
+  "maximum_normalized_equation_residual": 4.430638367423769e-18,
+  "maximum_singular_eigen_residual": 1.7988659200372633e-09,
+  "quantum_status": "No QLSA run or quantum advantage established; stage system does avoid E,d preprocessing",
+  "mathematical_status": "Numerical accuracy screen using previously certified linear reference; new full-stage discretization is not interval certified",
+  "preconditioner_status": "Four-RHS classical inverse compilation charged, not a free quantum primitive"
+}
